@@ -51,11 +51,11 @@ After handling all, the code is ready to be compiled.
 
 So, Navigate to the folder where the code is and ***run*** the following ***bash*** command:
 
-    g++ -o CollectorApp *.cpp -lwiringPi -lm -std=c++11
+    $ g++ -o CollectorApp *.cpp -lwiringPi -lm -std=c++11
 
 ***Now the executable file is ready to be run like this***:
 
-    ./CollectorApp
+    $ ./CollectorApp
 
 ---
 
