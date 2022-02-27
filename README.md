@@ -44,8 +44,7 @@ But in case you want to run the code, you need to install the WiringPi library f
 
 There is another prerequisite for the code to run.
 High speed I2C (400kHz) in the used Raspberry pi 4 have to be anabled.
-
-For the purpose use the following procedure described in the [here](https://www.raspberrypi-spy.co.uk/2018/02/change-raspberry-pi-i2c-bus-speed/).
+For the purpose use the procedure described in the [here](https://www.raspberrypi-spy.co.uk/2018/02/change-raspberry-pi-i2c-bus-speed/).
 
 After handling all, the code is ready to be compiled.
 
