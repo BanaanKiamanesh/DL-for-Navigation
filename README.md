@@ -1,4 +1,4 @@
-# **Implementation of a Regression Models(Deep-RNN Model + Support-Vector-Regression + K-Neighbours-Regression) for Navigation Against Kalman Filters for the Calculation of Quaternions and Euler Angles**
+# **Implementation of Regression Models(Deep-RNN Model + Support-Vector-Regression + K-Neighbours-Regression) for Navigation Against Kalman Filters for the Calculation of Quaternions and Euler Angles**
 
 ### This Repo Contains 2 Main Parts:
 
