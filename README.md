@@ -1,11 +1,10 @@
-# Deep Learning for Navigation
+# **Implementation of a Regression Models(Deep-RNN Model + Support-Vector-Regression + K-Neighbours-Regression) for Navigation Against Kalman Filters for the Calculation of Quaternions and Euler Angles**
 
-#### Implementation of a Deep RNN Model for Navigation in Comparison to Kalman Filters
+### This Repo Contains 2 Main Parts:
 
-### This Repo Contains 2 parts
-
-1. **[Dataset](https://github.com/BanaanKiamanesh/DL_for_Navigation/tree/main/DataSet)
-2. **[Model]()
+* [Dataset](https://github.com/BanaanKiamanesh/DL_for_Navigation/tree/main/DataSet)
+*   1. [DRNN Model](https://github.com/BanaanKiamanesh/DL_for_Navigation/tree/main/RNN%20Model)
+    2. [SVR+KNR Model](https://github.com/BanaanKiamanesh/DL_for_Navigation/tree/main/SVR%20Model)
 
 ## DataSet Collection
 
@@ -62,3 +61,26 @@ So, Navigate to the folder where the code is and ***run*** the following ***bash
 
 > **Note:** The files having "(No Mag)" in there names, don't contain magnetometer data.
 ---
+
+## **Models**
+For the purpose of this project, I used the following models:
+* Deep-RNN Model
+* Support-Vector-Regression Model
+* K-Neighbours-Regression Model
+
+Seems Like the Complexity of the data is so much that the ***RNN Model*** is not able to handle it.
+
+And it had a huge RMS of ***0.5*** in it's predictions and also the model stopped learning after a few epochs. Although the learning rate was adaptively adjusted. 
+
+So, I decided to use the ***Multi Output Support Vector Regression*** model.
+Which seemed to handle the data better.
+But, also the Model didn't perform well enough!
+
+So, as a last resort, I used the ***K-Neighbours Regression*** model. Which turned out to be the finest model for this data...
+
+And with a bit of tuning, it was able to perform the best on the data.
+with a mean absolute error of ***0.0043*** for Quaternions and ***3.3*** for Euler Angles.
+
+ > (**Note:** The mean absolute error is the average of the absolute errors of the predictions)
+---
+#### Logs for all the models are saved in a file named "Logs.txt" in the specific folder of each model.
