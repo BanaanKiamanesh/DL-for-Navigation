@@ -85,9 +85,9 @@ for i in range(1, 6):
                    'Acc_x',  'Acc_y',  'Acc_z',
                    'Mag_x',  'Mag_y',  'Mag_z']].values.astype('float32')
 
-    data_y = data[['Quat_0', 'Quat_1', 'Quat_2', 'Quat_3']
-                  ].values.astype('float32')
-    # data_y = data[['Euler_x', 'Euler_y', 'Euler_z']].values.astype('float32')
+    # data_y = data[['Quat_0', 'Quat_1', 'Quat_2', 'Quat_3']
+    #               ].values.astype('float32')
+    data_y = data[['Euler_x', 'Euler_y', 'Euler_z']].values.astype('float32')
 
     # Create the Sequence with Specified Time Lag
     num_steps = 60
