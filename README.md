@@ -27,7 +27,7 @@ To collect the data, I made a small setup using a Raspberry pi and BNO055 IMU. S
     5. USB-C to USB-A Adapter
     6. Breadboard
     7. Bunch of Jumper Wires
-    > **Note:** It should be portable, So the data collection is not constrained to a specific location and angle.
+    **Note:** It should be portable, So the data collection is not constrained to a specific location and angle.
 
 ![Best Data Logger in the Whole World!](images/Hardware_Setup.jpeg)
 
